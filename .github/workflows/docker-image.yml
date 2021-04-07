@@ -33,7 +33,7 @@ jobs:
         with:
           file: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/token_for_github:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/rustwhale_on_github:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
